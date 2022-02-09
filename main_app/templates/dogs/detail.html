@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Dog Details</h1>
+<h1>{{ dog.name }} Details</h1>
 
 <div class="row">
   <div class="col s6">
@@ -30,7 +30,7 @@
     </form>
     <br>
     {% if dog.fed_for_today %}
-      <div class="card-panel teal-text center-align">{dog.name}} has been fed all meals for today</div>
+      <div class="card-panel teal-text center-align">{{dog.name}} has been fed all meals for today</div>
     {% else %}
       <div class="card-panel red-text center-align">{{dog.name}} might be hungry</div>
     {% endif %}
